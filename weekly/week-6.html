@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <style type="text/css">
+            ol li{list-style-type: upper-alpha;}
+            ol{list-style-type: inside;}
+            ul{list-style-type: outside;}
+             li.kor{list-style-type: square;}
+             ul li.usa{list-style-image: url(gif);}
+             #book {width:90%;min-width:600px; border-spacing:0}
+             p{background-color: aqua;}
+            p:hover{background-color:red;transition:background-color 5s;}
+             ul{background-color: yellow;}
+             ol{background-color: pink;}
+
+        </style>
+    </head>
+    <body>
+         <p> 순서가 없는 목록</p>
+        <ul>
+            <li class="usa">첫번째</li>
+            <li class="usa">두번째</li>
+            <li class="kor">세번째</li>
+        </ul>
+         <p>순서가 있는 목록</p>
+        <ol>
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+        </ol>
+        </body>
+        <table border="1"id="book">
+            <tr>
+                <th>과목</th>
+                <th>책 제목</th>
+                <th>저자</th>
+                <th>출판사</th>
+            </tr>
+            <tr>
+                <td rowspan="2">웹프로그래밍</td>
+                <td>HTML5</td>
+                <td>인순범</td>
+                <td>생능</td>
+            </tr>
+            <tr>
+                <td>소셜 미디어</td>
+                <td>최윤철</td>
+                <td>생능</td>
+            </tr>
+            <tr>
+
+                    <th>합계</th>
+                    <td colspan="3">2권</td>
+
+            </tr>
+
+        </table>
+    </head>
+</html>
