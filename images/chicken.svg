@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="컵에 담긴 순살 치킨 일러스트">
+  <circle cx="100" cy="100" r="92" fill="#ff5fa2" opacity=".16"/>
+  <!-- 치킨 조각 -->
+  <path d="M52 86 q-6 -26 20 -30 q18 -4 22 14 q4 18 -16 22 q-20 6 -26 -6z" fill="#e89a3c"/>
+  <path d="M90 74 q2 -30 28 -28 q22 2 20 22 q-2 20 -24 20 q-24 0 -24 -14z" fill="#f0a94a"/>
+  <path d="M120 88 q10 -26 32 -16 q16 8 6 26 q-10 16 -28 8 q-14 -6 -10 -18z" fill="#d9832b"/>
+  <path d="M74 98 q4 -20 24 -18 q20 2 18 18z" fill="#c8742a"/>
+  <!-- 바삭한 결 -->
+  <path d="M64 70 l4 4 M76 62 l3 5 M104 58 l2 6 M118 54 l3 5 M138 80 l4 3 M146 92 l4 2" stroke="#b5641f" stroke-width="3" stroke-linecap="round"/>
+  <!-- 양념 -->
+  <path d="M96 62 q10 -6 20 2" fill="none" stroke="#b52d2d" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  <!-- 컵 -->
+  <path d="M46 96 h108 l-12 74 q-2 10 -12 10 h-60 q-10 0 -12 -10 z" fill="#ff5fa2"/>
+  <path d="M60 96 l8 84 M84 96 l3 84 M116 96 l-3 84 M140 96 l-8 84" stroke="#f6f2ff" stroke-width="6" opacity=".35"/>
+  <rect x="42" y="90" width="116" height="12" rx="6" fill="#f6f2ff"/>
+  <!-- 보름달 라벨 -->
+  <circle cx="100" cy="140" r="16" fill="#ffe66d"/>
+  <circle cx="95" cy="136" r="3.5" fill="#f2cf43"/>
+  <circle cx="106" cy="146" r="4.5" fill="#f2cf43"/>
+</svg>

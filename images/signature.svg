@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="푸른 블루문 소다 일러스트">
+  <defs>
+    <linearGradient id="soda" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6ad7ff"/>
+      <stop offset="1" stop-color="#3b3fd1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="#6ad7ff" opacity=".14"/>
+  <!-- 빨대 -->
+  <path d="M112 72 L132 18" stroke="#ff5fa2" stroke-width="8" stroke-linecap="round"/>
+  <!-- 소다 -->
+  <path d="M62 70 h76 l-8 100 q-1 8 -10 8 h-40 q-9 0 -10 -8 z" fill="url(#soda)"/>
+  <!-- 기포 -->
+  <circle cx="84" cy="150" r="4" fill="#f6f2ff" opacity=".7"/>
+  <circle cx="112" cy="132" r="3" fill="#f6f2ff" opacity=".7"/>
+  <circle cx="96" cy="112" r="5" fill="#f6f2ff" opacity=".6"/>
+  <circle cx="118" cy="160" r="2.5" fill="#f6f2ff" opacity=".7"/>
+  <!-- 잔 속 달 -->
+  <circle cx="100" cy="92" r="13" fill="#ffe66d"/>
+  <circle cx="107" cy="87" r="11" fill="#5aa8f0"/>
+  <!-- 레몬 슬라이스 -->
+  <circle cx="62" cy="72" r="20" fill="#ffe66d"/>
+  <circle cx="62" cy="72" r="15" fill="#fff4a8"/>
+  <path d="M62 57 V87 M47 72 H77 M51 61 L73 83 M73 61 L51 83" stroke="#ffe66d" stroke-width="2.5"/>
+  <!-- 유리잔 -->
+  <path d="M56 50 h88 l-12 120 q-1 10 -12 10 h-40 q-11 0 -12 -10 z" fill="#ffffff" fill-opacity=".06" stroke="#f6f2ff" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M68 64 L76 160" stroke="#ffffff" stroke-opacity=".45" stroke-width="4" stroke-linecap="round"/>
+  <path d="M160 40 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" fill="#ffe66d"/>
+  <path d="M34 120 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z" fill="#8b7bff"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="치즈케이크와 달 모양 쿠키 일러스트">
+  <circle cx="100" cy="100" r="92" fill="#ffe66d" opacity=".14"/>
+  <!-- 접시 -->
+  <ellipse cx="100" cy="162" rx="78" ry="12" fill="#f6f2ff" opacity=".85"/>
+  <!-- 치즈케이크 조각 -->
+  <polygon points="40,104 128,84 150,112 62,134" fill="#5a3216"/>
+  <polygon points="62,134 150,112 150,154 62,162" fill="#ffe9b0"/>
+  <polygon points="40,104 62,134 62,162 40,146" fill="#f6d98a"/>
+  <path d="M62 150 L150 140" stroke="#e8c26a" stroke-width="4"/>
+  <polygon points="62,156 150,146 150,154 62,162" fill="#c98a4b"/>
+  <!-- 그을린 윗면 -->
+  <path d="M60 110 q30 -10 60 -18" fill="none" stroke="#3a1f0c" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+  <!-- 달 모양 쿠키 (한 입 베어 문) -->
+  <path d="M168 56 a26 26 0 1 1 -18 -24 a12 12 0 0 0 18 24z" fill="#f0b36a"/>
+  <circle cx="140" cy="52" r="3.5" fill="#c98a4b"/>
+  <circle cx="152" cy="66" r="3" fill="#c98a4b"/>
+  <circle cx="134" cy="68" r="2.5" fill="#c98a4b"/>
+  <path d="M40 40 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" fill="#ff5fa2"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="티백이 담긴 찻잔 일러스트">
+  <circle cx="100" cy="100" r="92" fill="#6ad7ff" opacity=".14"/>
+  <!-- 받침 -->
+  <ellipse cx="100" cy="160" rx="72" ry="11" fill="#f6f2ff" opacity=".85"/>
+  <!-- 손잡이 -->
+  <path d="M150 104 q24 0 22 18 q-2 16 -28 16" fill="none" stroke="#f6f2ff" stroke-width="10" stroke-linecap="round"/>
+  <!-- 찻잔 -->
+  <path d="M40 96 h120 q-4 58 -60 58 q-56 0 -60 -58 z" fill="#f6f2ff"/>
+  <ellipse cx="100" cy="96" rx="60" ry="12" fill="#d98a3a"/>
+  <ellipse cx="100" cy="94" rx="50" ry="7" fill="#f0b36a" opacity=".6"/>
+  <path d="M58 116 q42 14 84 0" fill="none" stroke="#8b7bff" stroke-width="6" stroke-linecap="round"/>
+  <!-- 티백 줄과 태그 -->
+  <path d="M118 94 q6 -40 30 -52" fill="none" stroke="#a9a3cc" stroke-width="3"/>
+  <rect x="140" y="26" width="28" height="30" rx="4" fill="#ffe66d" transform="rotate(14 154 41)"/>
+  <circle cx="155" cy="41" r="7" fill="#13112a" transform="rotate(14 154 41)"/>
+  <circle cx="158" cy="38" r="6" fill="#ffe66d" transform="rotate(14 154 41)"/>
+  <!-- 잎 -->
+  <path d="M40 60 q20 -26 44 -12 q-16 26 -44 12z" fill="#7bd88f"/>
+  <path d="M44 58 q18 -6 34 -8" fill="none" stroke="#4fae63" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

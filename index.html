@@ -3,97 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>개인 이력서 | 상명대학교 소프트웨어학과</title>
-  <meta name="description" content="학습 과정과 프로젝트 활동을 정리한 개인 이력서 웹페이지입니다.">
+  <title>달빛카페 MOONLIGHT | 메뉴</title>
+  <meta name="description" content="밤에 문을 여는 달빛카페의 메뉴판입니다. 커피, 논커피, 디저트, 시즌 메뉴와 보름달 컵치킨.">
+  <meta name="theme-color" content="#0a0918">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">본문 바로가기</a>
+<body id="top">
+  <a class="skip-link" href="#menu">메뉴 바로가기</a>
+
+  <!-- 헤더: 로고 + 영업 상태 -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="identity">
-        <p class="eyebrow">MY PORTFOLIO</p>
-        <h1>[OHOOOOO]</h1>
-        <p class="school">상명대학교 소프트웨어학과 1학년</p>
-        <p class="intro">[저는 경제분야와 게임 개발에 관심이 많은 학생입니다]</p>
-      </div>
-      <a class="github-link" href="https://github.com/opuhf1" target="_blank" rel="noopener noreferrer">GitHub 프로필 <span aria-hidden="true">↗</span></a>
+      <a class="brand" href="#top" aria-label="달빛카페 처음으로">
+        <span class="brand-moon" aria-hidden="true"></span>
+        <div class="brand-text">
+          <h1 class="brand-name">달빛카페</h1>
+          <small>MOONLIGHT CAFE</small>
+        </div>
+      </a>
+      <p class="status" id="open-status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="status-text">영업 정보를 확인하는 중…</span>
+      </p>
     </div>
   </header>
 
-  <main id="main" class="container">
-    <!-- 화면 설계 순서 1: 실적 표 -->
-    <section id="achievements" class="section" aria-labelledby="achievements-title">
-      <div class="section-heading">
-        <p class="section-label">01 / EXPERIENCE</p>
-        <h2 id="achievements-title">활동 및 성과</h2>
+  <!-- 카테고리 탭 (script.js가 버튼을 채움) -->
+  <nav class="tabs" aria-label="메뉴 분류">
+    <div class="container tabs-inner" id="tabs"></div>
+  </nav>
+
+  <main>
+    <!-- 히어로: 오늘 밤의 시그니처 -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="sticker">TONIGHT'S SIGNATURE</p>
+        <h2 id="hero-title">달빛 크림 라떼</h2>
+        <p class="hero-desc">꿀을 넣은 크림 위에 시나몬을 한 겹.<br>달이 뜨는 시간에만 내리는 한 잔.</p>
+        <div class="hero-buy">
+          <span class="hero-price">5,500원</span>
+          <button type="button" class="btn-primary" data-action="plus" data-id="moon-cream-latte">주문에 담기 +</button>
+        </div>
       </div>
-      <div class="table-wrap">
-        <table>
-          <caption>활동 및 성과 목록 — 시기, 분류, 내용, 역할</caption>
-          <thead><tr><th scope="col">시기</th><th scope="col">분류</th><th scope="col">내용</th><th scope="col">역할</th></tr></thead>
-          <tbody>
-            <tr><td>[2024.12]</td><td><span class="tag">수상</span></td><td>[표창장]</td><td>[모범]</td></tr>
-            <tr><td>[2024.04]</td><td><span class="tag">활동</span></td><td>[경제경영발굴단]</td><td>[부기장]</td></tr>
-             <tr><td>[2023.12]</td><td><span class="tag">수상</span></td><td>[표창장]</td><td>[봉사]</td></tr>
-            <tr><td>[2022.04]</td><td><span class="tag">교육</span></td><td>[친구와 학습 조직을 만들어 국어,수학 과목을 스스로 학습하는 자기주도적 역량 발휘]</td><td>[멘티]</td></tr>
-          </tbody>
-        </table>
-      </div>
-      
+      <img class="hero-img" src="images/hero.svg" width="400" height="400" alt="보름달 아래 달빛 크림 라떼 일러스트">
     </section>
 
-    <!-- 화면 설계 순서 2: 수강 과목 -->
-    <section id="courses" class="section" aria-labelledby="courses-title">
-      <div class="section-heading">
-        <p class="section-label">02 / COURSES</p>
-        <h2 id="courses-title">수강 과목</h2>
+    <!-- 메뉴 목록 (script.js가 채움) -->
+    <section id="menu" class="menu container" aria-labelledby="menu-title">
+      <div class="section-head">
+        <p class="eyebrow">MENU</p>
+        <h2 id="menu-title">오늘 밤의 메뉴</h2>
       </div>
-      <ul>
-        <li><span class="course-name">[컴퓨터프로그래밍ⅠⅠ(PBL)]</span><span class="course-type major">전공</span></li>
-        <li><span class="course-name">[컴퓨터프로그래밍실습ⅠⅠ(PBL)]</span><span class="course-type major">전공</span></li>
-        <li><span class="course-name">[풍경이있는한국문학기행]</span><span class="course-type liberal">교양</span></li>
-        <li><span class="course-name">[연극감상과비평]</span><span class="course-type liberal">교양</span></li>
-        <li><span class="course-name">[현대사회와공간]</span><span class="course-type liberal">교양</span></li>
-        <li><a class="course-name course-link" href="#weekly">웹프로그래밍 및 AI에이전트 활용</a><span class="course-type major">전공</span></li>
-      </ul>
+      <!-- 메뉴 검색 + 랜덤 추천 -->
+      <div class="menu-tools">
+        <input class="search" type="search" id="menu-search" placeholder="메뉴 검색 (예: 라떼, 치킨)" aria-label="메뉴 검색" autocomplete="off">
+        <button type="button" class="btn-ghost pick-btn" data-action="pick">🎲 오늘 뭐 먹지?</button>
+        <div class="pick-result" id="pick-result" aria-live="polite" hidden></div>
+      </div>
+      <div id="menu-list"></div>
+      <noscript>
+        <p class="cart-empty">메뉴를 보려면 브라우저에서 JavaScript를 켜 주세요.</p>
+      </noscript>
     </section>
 
-    <!-- 화면 설계 순서 3: 주차별 실습 링크 -->
-    <section id="weekly" class="section" aria-labelledby="weekly-title">
-      <div class="section-heading">
-        <p class="section-label">03 / WEEKLY PRACTICE</p>
-        <h2 id="weekly-title">웹프로그래밍 주차별 링크</h2>
-        <p>진행한 주차는 해당 주차 실습 페이지로 연결하고, 진행하지 않은 주차는 예정으로 표시합니다.</p>
+    <!-- 주문 계산기 -->
+    <section id="cart" class="cart container" aria-labelledby="cart-title">
+      <div class="cart-box">
+        <div class="section-head">
+          <p class="eyebrow">ORDER</p>
+          <h2 id="cart-title">주문 계산기</h2>
+        </div>
+        <p class="cart-empty" id="cart-empty">아직 담은 메뉴가 없어요. 메뉴의 <b>+</b> 버튼을 눌러 보세요.</p>
+        <ul class="cart-list" id="cart-list"></ul>
+        <div class="cart-total">
+          <span>총 <b id="cart-count">0</b>개</span>
+          <strong id="cart-total" aria-live="polite">0원</strong>
+        </div>
+        <button type="button" class="btn-ghost" id="cart-clear" data-action="clear" disabled>모두 비우기</button>
       </div>
-      <ol class="week-grid" aria-label="1주차부터 15주차까지의 실습 상태">
-        <li><a class="week-card planned"><span>1주차</span><small>ot · 링크 없음</small></a></li>
-        <li><a class="week-card complete" href="weekly/week-2.html"><span>2주차</span><small>진행 · 실습 페이지</small></a></li>
-        <li><a class="week-card complete" href="weekly/week-3.html"><span>3주차</span><small>진행 · 실습 페이지</small></a></li>
-        <li><a class="week-card planned"><span>4주차</span><small>추석 · 링크 없음</small></a></li>
-        <li><a class="week-card complete" href="weekly/week-5.html"><span>5주차</span><small>진행 · 실습 페이지</small></a></li>
-        <li><a class="week-card complete" href="weekly/week-6.html"><span>6주차</span><small>진행 · 실습 페이지</small></a></li>
-        <li><a class="week-card complete" href="weekly/week-7.html"><span>7주차</span><small>진행 · 실습 페이지</small></a></li>
-        <li><span class="week-card planned"><span>8주차</span><small>예정 · 링크 없음</small></span></li>
-        <li><span class="week-card planned"><span>9주차</span><small>예정 · 링크 없음</small></span></li>
-        <li><span class="week-card planned"><span>10주차</span><small>예정 · 링크 없음</small></span></li>
-        <li><span class="week-card planned"><span>11주차</span><small>예정 · 링크 없음</small></span></li>
-        <li><span class="week-card planned"><span>12주차</span><small>예정 · 링크 없음</small></span></li>
-        <li><span class="week-card planned"><span>13주차</span><small>예정 · 링크 없음</small></span></li>
-        <li><span class="week-card planned"><span>14주차</span><small>예정 · 링크 없음</small></span></li>
-        <li><span class="week-card planned"><span>15주차</span><small>예정 · 링크 없음</small></span></li>
-      </ol>
-      
     </section>
   </main>
 
-  
+  <!-- 화면 아래 고정 주문 바 -->
+  <a class="cart-bar" id="cart-bar" href="#cart" hidden>
+    <span>🌙 <b id="bar-count">0</b>개 담음</span>
+    <strong id="bar-total">0원</strong>
+  </a>
+
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>학습과 경험을 꾸준히 기록합니다.</p>
-      <p>최종 수정일: <time>2026-10-19</time></p>
+      <div>
+        <p class="footer-brand">달빛카페 MOONLIGHT</p>
+        <p>달이 뜨면 문을 엽니다.</p>
+      </div>
+      <dl class="info">
+        <div><dt>위치</dt><dd>서울시 달빛구 은하로 15, 1층</dd></div>
+        <div><dt>영업시간</dt><dd>매일 18:00 – 02:00 · 화요일 휴무</dd></div>
+        <div><dt>SNS</dt><dd>@moonlight.cafe</dd></div>
+      </dl>
     </div>
   </footer>
 </body>
 </html>
-
